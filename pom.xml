@@ -29,8 +29,28 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+<dependency>
+<groupId>org.sonarsource.scanner.maven</groupId>
+<artifactId>sonar-maven-plugin</artifactId>
+<version>3.2</version>
+</dependency>
+
   </dependencies>
-<profiles>
+<profiles> 
+
+<profile>
+<id>sonar</id>
+<activation>
+<activeByDefault>true</activeByDefault>
+</activation>
+<properties>
+<!-- Optional URL to server. Default value is http://localhost:9000 -->
+<sonar.host.url>
+http://13.234.113.127::9000
+</sonar.host.url>
+</properties>
+</profile>
+
 <profile>
         <id>dockerimage</id>
          <build>
@@ -120,5 +140,7 @@
       </plugins>
  </build>
     </profile>
+
+
 </profiles>
 </project>

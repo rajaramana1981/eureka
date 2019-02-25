@@ -1,0 +1,6 @@
+projectKey=example:sample
+serverUrl=http://13.232.164.18:9000
+serverVersion=7.6.0.21501
+dashboardUrl=http://13.232.164.18:9000/dashboard?id=example%3Asample
+ceTaskId=AWkiaaVSaXphCoc0yue0
+ceTaskUrl=http://13.232.164.18:9000/api/ce/task?id=AWkiaaVSaXphCoc0yue0
